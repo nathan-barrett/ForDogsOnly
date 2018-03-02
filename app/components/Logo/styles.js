@@ -20,5 +20,6 @@ export default EStyleSheet.create({
     tintColor: '$primaryBlue',
     width: imageWidth,
     height: imageWidth,
+    marginBottom: 20,
   },
 });
