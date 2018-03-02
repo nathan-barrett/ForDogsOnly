@@ -1,6 +1,7 @@
 import React from 'react';
 import EStyleSheet from 'react-native-extended-stylesheet';
 import Welcome from './screens/Welcome';
+import Register from './screens/Register';
 
 
 EStyleSheet.build({
@@ -9,4 +10,4 @@ EStyleSheet.build({
   $primaryBlue: '#23B5D3',
 });
 
-export default () => <Welcome />;
+export default () => <Register />;
