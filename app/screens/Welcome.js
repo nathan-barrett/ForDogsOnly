@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { StatusBar } from 'react-native';
+import PropTypes from 'prop-types';
 
 import { Container } from '../components/Container';
 import { Logo } from '../components/Logo';
@@ -8,8 +9,11 @@ import { LoginButton } from '../components/Button';
 
 
 class Welcome extends Component {
+  static propTypes = {
+    navigation: PropTypes.object,
+  }
   handleLoginPress = () => {
-    console.log('handle login');
+    this.props.navigation.navigate('Register');
   }
   render() {
     return (
