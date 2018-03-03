@@ -3,25 +3,26 @@ import { StackNavigator } from 'react-navigation';
 
 import Welcome from '../screens/Welcome';
 import Register from '../screens/Register';
+import styles from './styles';
 
 const WelcomeStack = StackNavigator(
   {
     Welcome: {
       screen: Welcome,
-      navigationOption: {
+      navigationOptions: {
         header: () => null,
-        headerTitle: 'Welcome',
       },
     },
     Register: {
       screen: Register,
       navigationOptions: {
         headerTitle: 'Register',
+        headerBackTitle: () => null,
       },
     },
   },
   {
-    headerMode: 'none',
+    headerMode: 'screen',
   },
 );
 
@@ -35,5 +36,8 @@ export default StackNavigator(
     mode: 'modal',
     headerMode: 'none',
     cardsStyle: { paddingTop: StatusBar.currentHeight },
+    navigationOptions: {
+      headerStyle: styles.header,
+    },
   },
 );

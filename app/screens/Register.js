@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-import { StatusBar, View } from 'react-native';
+import { StatusBar } from 'react-native';
 
-import { Container } from '../components/Container';
+import { FormContainer } from '../components/Container';
 import { RegistrationForm } from '../components/Forms';
+import { LoginButton } from '../components/Button';
 
 
 class Register extends Component {
@@ -11,10 +12,11 @@ class Register extends Component {
   }
   render() {
     return (
-      <Container>
-        <StatusBar backgroundColor="blue" barStyle="light-content" />
+      <FormContainer style={{ justifyContent: 'flex-start' }}>
+        <StatusBar backgroundColor="blue" barStyle="default" />
         <RegistrationForm />
-      </Container>
+        <LoginButton onPress={this.handleLoginPress} buttonText="Login" />
+      </FormContainer>
     );
   }
 }

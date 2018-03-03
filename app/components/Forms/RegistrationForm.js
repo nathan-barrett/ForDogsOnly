@@ -1,11 +1,27 @@
 import React from 'react';
-import { View, TextInput, Text } from 'react-native';
+import { View, TextInput } from 'react-native';
 
 import styles from './styles';
 
 
 const RegistrationForm = () => (
-  <View style={styles.formContainer} />
+  <View style={styles.formBorder} >
+    <TextInput
+      style={styles.input}
+      placeholder="Full Name"
+    />
+    <TextInput
+      style={styles.input}
+      placeholder="Email"
+    />
+    <TextInput
+      style={styles.input}
+      placeholder="Password"
+    />
+    <TextInput
+      style={styles.input}
+      placeholder="Confirm Password"
+    />
+  </View>
 );
-
 export default RegistrationForm;

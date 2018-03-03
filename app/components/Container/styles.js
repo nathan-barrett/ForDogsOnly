@@ -5,6 +5,12 @@ export default EStyleSheet.create({
     flex: 1,
     alignItems: 'center',
     backgroundColor: '$primaryOrange',
-    justifyContent: 'center',
+    justifyContent: 'space-around',
+  },
+  formContainer: {
+    flex: 1,
+    alignItems: 'center',
+    backgroundColor: '$primaryOrange',
+    justifyContent: 'space-between',
   },
 });

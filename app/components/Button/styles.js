@@ -17,6 +17,5 @@ export default EStyleSheet.create({
   },
   container: {
     justifyContent: 'center',
-    marginTop: 150,
   },
 });
