@@ -14,7 +14,7 @@ export default EStylesheet.create({
   },
   input: {
     flex: 1,
-    height: 48,
+    height: 32,
     // marginLeft: 20,
     paddingHorizontal: 8,
     fontSize: 20,

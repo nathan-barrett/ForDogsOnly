@@ -3,6 +3,7 @@ import { StackNavigator } from 'react-navigation';
 
 import Welcome from '../screens/Welcome';
 import Register from '../screens/Register';
+import CreateProfile from '../screens/CreateProfile';
 import styles from './styles';
 
 const WelcomeStack = StackNavigator(
@@ -26,10 +27,30 @@ const WelcomeStack = StackNavigator(
   },
 );
 
+const RegistrationStack = StackNavigator({
+  Register: {
+    screen: Register,
+    navigationOptions: {
+      headerTitle: 'Register',
+      headerBackTitle: () => null,
+    },
+  },
+  CreateProfile: {
+    screen: CreateProfile,
+    navigationOptions: {
+      headerTitle: 'Register Profile',
+      headerBackTitle: () => null,
+    },
+  },
+});
+
 export default StackNavigator(
   {
     Welcome: {
       screen: WelcomeStack,
+    },
+    Register: {
+      screen: RegistrationStack,
     },
   },
   {

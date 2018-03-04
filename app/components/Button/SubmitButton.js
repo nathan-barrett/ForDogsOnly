@@ -4,18 +4,19 @@ import { TouchableHighlight, Text } from 'react-native';
 
 import styles from './styles';
 
-const LoginButton = props => (
+
+const SubmitButton = props => (
   <TouchableHighlight
-    style={styles.LoginButton}
+    style={styles.submitButton}
     onPress={props.onPress}
   >
     <Text style={styles.loginText}>{props.buttonText}</Text>
   </TouchableHighlight>
 );
 
-LoginButton.propTypes = {
+SubmitButton.propTypes = {
   onPress: PropTypes.func,
   buttonText: PropTypes.string,
 };
 
-export default LoginButton;
+export default SubmitButton;

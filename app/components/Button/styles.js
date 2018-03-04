@@ -1,13 +1,15 @@
 import EStyleSheet from 'react-native-extended-stylesheet';
 
 export default EStyleSheet.create({
-  loginButton: {
+  LoginButton: {
     height: 48,
     alignItems: 'center',
     justifyContent: 'center',
     backgroundColor: '$primaryBlue',
     width: 190,
     borderRadius: 8,
+    marginTop: 80,
+
   },
   loginText: {
     fontWeight: '600',
@@ -17,5 +19,14 @@ export default EStyleSheet.create({
   },
   container: {
     justifyContent: 'center',
+  },
+  submitButton: {
+    height: 48,
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: '$primaryBlue',
+    width: 190,
+    borderRadius: 8,
+    marginTop: 40,
   },
 });

@@ -1,24 +1,18 @@
 import React, { Component } from 'react';
 import { StatusBar } from 'react-native';
-import PropTypes from 'prop-types';
-
 import { FormContainer } from '../components/Container';
-import { RegistrationForm } from '../components/Forms';
+import { ProfileForm } from '../components/Forms';
 import { SubmitButton } from '../components/Button';
 
 
-class Register extends Component {
-  static propTypes = {
-    navigation: PropTypes.object,
-  }
+class CreateProfile extends Component {
   handleLoginPress = () => {
-    this.props.navigation.navigate('CreateProfile');
+    console.log('handle login');
   }
   render() {
     return (
       <FormContainer style={{ justifyContent: 'flex-start' }}>
         <StatusBar backgroundColor="blue" barStyle="default" />
-        <RegistrationForm />
         <SubmitButton
           onPress={this.handleLoginPress}
           buttonText="Continue"
@@ -27,4 +21,4 @@ class Register extends Component {
     );
   }
 }
-export default Register;
+export default CreateProfile;

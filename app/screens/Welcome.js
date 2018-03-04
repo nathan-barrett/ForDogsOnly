@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { StatusBar } from 'react-native';
 import PropTypes from 'prop-types';
 
+
 import { Container } from '../components/Container';
 import { Logo } from '../components/Logo';
 import { WelcomeText } from '../components/Text';
