@@ -6,7 +6,7 @@ import styles from './styles';
 
 const Container = ({ children }) => (
   <View
-    style={styles.formContainer}
+    style={styles.startContainer}
   >
     {children}
   </View>

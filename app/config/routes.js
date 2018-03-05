@@ -37,9 +37,12 @@ const ProfileStack = StackNavigator({
   Profile: {
     screen: Profile,
     navigationOptions: {
-      header: () => null,
+      headerTitle: 'Profile',
     },
   },
+}:
+{
+  headerMode: 'screen',
 });
 export default StackNavigator(
   {
