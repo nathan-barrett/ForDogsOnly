@@ -1,14 +1,16 @@
 import React from 'react';
 import { StatusBar } from 'react-native';
-import { FormContainer } from '../components/Container';
+import { ScrollContainer } from '../components/Container';
 import { ProfilePicture } from '../components/Images';
+import { BioText } from '../components/Text';
 
 
 const Profile = () => (
-  <FormContainer >
+  <ScrollContainer>
     <StatusBar backgroundColor="blue" barStyle="light-content" />
     <ProfilePicture />
-  </FormContainer>
+    <BioText />
+  </ScrollContainer>
 );
 
 

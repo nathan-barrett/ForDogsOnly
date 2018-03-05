@@ -4,7 +4,7 @@ import { View } from 'react-native';
 
 import styles from './styles';
 
-const Container = ({ children }) => (
+const FormContainer = ({ children }) => (
   <View
     style={styles.startContainer}
   >
@@ -12,8 +12,8 @@ const Container = ({ children }) => (
   </View>
 );
 
-Container.propTypes = {
+FormContainer.propTypes = {
   children: PropTypes.any,
 };
 
-export default Container;
+export default FormContainer;

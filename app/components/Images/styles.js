@@ -8,6 +8,7 @@ export default EStyleSheet.create({
     width: imageWidth,
     height: imageWidth,
     borderRadius: 60,
-    marginTop: 20,
+    marginTop: 30,
+    marginBottom: 5,
   },
 });

@@ -12,5 +12,6 @@ export default EStyleSheet.create({
     alignItems: 'center',
     backgroundColor: '$primaryOrange',
     justifyContent: 'flex-start',
+    paddingHorizontal: 15,
   },
 });
