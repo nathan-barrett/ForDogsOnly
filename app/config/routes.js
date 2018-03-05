@@ -4,7 +4,7 @@ import { StackNavigator } from 'react-navigation';
 import Welcome from '../screens/Welcome';
 import Register from '../screens/Register';
 import CreateProfile from '../screens/CreateProfile';
-import styles from './styles';
+import Profile from '../screens/Profile';
 
 const WelcomeStack = StackNavigator(
   {
@@ -18,7 +18,13 @@ const WelcomeStack = StackNavigator(
       screen: Register,
       navigationOptions: {
         headerTitle: 'Register',
-        headerBackTitle: () => null,
+        headerBackTitle: null,
+      },
+    },
+    CreateProfile: {
+      screen: CreateProfile,
+      navigationOptions: {
+        headerTitle: 'Register Profile',
       },
     },
   },
@@ -27,38 +33,26 @@ const WelcomeStack = StackNavigator(
   },
 );
 
-const RegistrationStack = StackNavigator({
-  Register: {
-    screen: Register,
+const ProfileStack = StackNavigator({
+  Profile: {
+    screen: Profile,
     navigationOptions: {
-      headerTitle: 'Register',
-      headerBackTitle: () => null,
-    },
-  },
-  CreateProfile: {
-    screen: CreateProfile,
-    navigationOptions: {
-      headerTitle: 'Register Profile',
-      headerBackTitle: () => null,
+      header: () => null,
     },
   },
 });
-
 export default StackNavigator(
   {
     Welcome: {
       screen: WelcomeStack,
     },
-    Register: {
-      screen: RegistrationStack,
+    Profile: {
+      screen: ProfileStack,
     },
   },
   {
     mode: 'modal',
     headerMode: 'none',
     cardsStyle: { paddingTop: StatusBar.currentHeight },
-    navigationOptions: {
-      headerStyle: styles.header,
-    },
   },
 );

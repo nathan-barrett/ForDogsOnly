@@ -4,20 +4,17 @@ import { View, TextInput } from 'react-native';
 import styles from './styles';
 
 
-const RegistrationForm = () => (
+const ProfileForm = () => (
   <View style={styles.formBorder} >
     <TextInput
-      style={styles.input}
-      placeholder="Full Name"
+      placeholder="Dog's Name:"
     />
     <TextInput
-      style={styles.input}
-      placeholder="Email"
+      placeholder="Description"
     />
     <TextInput
-      style={styles.input}
-      placeholder="Email"
+      placeholder="Select Profile Photo"
     />
   </View>
 );
-export default RegistrationForm;
+export default ProfileForm;
