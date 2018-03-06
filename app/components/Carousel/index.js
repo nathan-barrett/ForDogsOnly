@@ -1,4 +1,4 @@
-import Carousel from './Carousel';
+import CarouselPost from './CarouselPost';
 import styles from './styles';
 
-export { Pagination, styles };
+export { CarouselPost, styles };
