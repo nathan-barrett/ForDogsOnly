@@ -1,4 +1,5 @@
 import styles from './styles';
 import ProfilePicture from './ProfilePicture';
+import ImagePosts from './ImagePosts';
 
-export { ProfilePicture, styles };
+export { ProfilePicture, styles, ImagePosts };

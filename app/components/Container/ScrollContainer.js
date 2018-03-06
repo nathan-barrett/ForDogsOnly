@@ -1,15 +1,15 @@
 import PropTypes from 'prop-types';
 import React from 'react';
-import { ScrollView } from 'react-native';
+import { ScrollView, View } from 'react-native';
 
 import styles from './styles';
 
 const ScrollContainer = ({ children }) => (
-  <ScrollView
-    contentContainerStyle={styles.startContainer}
-  >
-    {children}
-  </ScrollView>
+  <View style={styles.parentContainer}>
+    <ScrollView styles={styles.ScrollContainer}>
+      {children}
+    </ScrollView>
+  </View>
 );
 
 ScrollContainer.propTypes = {
