@@ -5,6 +5,7 @@ import Welcome from '../screens/Welcome';
 import Register from '../screens/Register';
 import CreateProfile from '../screens/CreateProfile';
 import Profile from '../screens/Profile';
+import HomeFeed from '../screens/HomeFeed';
 
 const WelcomeStack = StackNavigator(
   {
@@ -44,6 +45,17 @@ const ProfileStack = StackNavigator({
 {
   headerMode: 'screen',
 });
+
+const HomeFeedStack = StackNavigator(
+  {
+    HomeFeed: {
+      screen: HomeFeed,
+    },
+  },
+  {
+    headerMode: 'screen',
+  },
+);
 export default StackNavigator(
   {
     Welcome: {
@@ -51,6 +63,9 @@ export default StackNavigator(
     },
     Profile: {
       screen: ProfileStack,
+    },
+    HomeFeed: {
+      screen: HomeFeedStack,
     },
   },
   {

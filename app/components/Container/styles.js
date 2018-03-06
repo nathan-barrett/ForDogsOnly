@@ -7,7 +7,7 @@ export default EStyleSheet.create({
   container: {
     flex: 1,
     alignItems: 'center',
-    backgroundColor: '$primaryOrange',
+    backgroundColor: 'transparent',
     justifyContent: 'center',
   },
   startContainer: {
