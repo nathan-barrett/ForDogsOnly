@@ -1,65 +1,43 @@
-export const ENTRIES1 = [
-  {
-    title: 'Beautiful and dramatic Antelope Canyon',
-    subtitle: 'Lorem ipsum dolor sit amet et nuncat mergitur',
-    illustration: 'https://i.imgur.com/UYiroysl.jpg',
-  },
-  {
-    title: 'Earlier this morning, NYC',
-    subtitle: 'Lorem ipsum dolor sit amet',
-    illustration: 'https://i.imgur.com/UPrs1EWl.jpg',
-  },
-  {
-    title: 'White Pocket Sunset',
-    subtitle: 'Lorem ipsum dolor sit amet et nuncat ',
-    illustration: 'https://i.imgur.com/MABUbpDl.jpg',
-  },
-  {
-    title: 'Acrocorinth, Greece',
-    subtitle: 'Lorem ipsum dolor sit amet et nuncat mergitur',
-    illustration: 'https://i.imgur.com/KZsmUi2l.jpg',
-  },
-  {
-    title: 'The lone tree, majestic landscape of New Zealand',
-    subtitle: 'Lorem ipsum dolor sit amet',
-    illustration: 'https://i.imgur.com/2nCt3Sbl.jpg',
-  },
-  {
-    title: 'Middle Earth, Germany',
-    subtitle: 'Lorem ipsum dolor sit amet',
-    illustration: 'https://i.imgur.com/lceHsT6l.jpg',
-  },
-];
+import { Images } from './images';
 
-export const ENTRIES2 = [
-  {
-    title: 'Favourites landscapes 1',
-    subtitle: 'Lorem ipsum dolor sit amet',
-    illustration: 'https://i.imgur.com/SsJmZ9jl.jpg',
+
+const USER_ENTRIES = {
+  0: {
+    name: 'Tala',
+    breed: 'German Shepard',
+    description: 'Tala is a puppy at heart, and love sto roll around in the dirt. She is still figuring out how big her body is.',
+    profilePhoto: Images.Tala1,
   },
-  {
-    title: 'Favourites landscapes 2',
-    subtitle: 'Lorem ipsum dolor sit amet et nuncat mergitur',
-    illustration: 'https://i.imgur.com/5tj6S7Ol.jpg',
+  1: {
+    name: 'Tala',
+    breed: 'German Shepard',
+    description: 'Tala is a puppy at heart, and love sto roll around in the dirt. She is still figuring out how big her body is.',
+    profilePhoto: Images.Tala2,
   },
-  {
-    title: 'Favourites landscapes 3',
-    subtitle: 'Lorem ipsum dolor sit amet et nuncat',
-    illustration: 'https://i.imgur.com/pmSqIFZl.jpg',
+  2: {
+    name: 'Tala',
+    breed: 'German Shepard',
+    description: 'Tala is a puppy at heart, and love sto roll around in the dirt. She is still figuring out how big her body is.',
+    profilePhoto: Images.Tala3,
   },
-  {
-    title: 'Favourites landscapes 4',
-    subtitle: 'Lorem ipsum dolor sit amet et nuncat mergitur',
-    illustration: 'https://i.imgur.com/cA8zoGel.jpg',
+  3: {
+    name: 'Tala',
+    breed: 'German Shepard',
+    description: 'Tala is a puppy at heart, and love sto roll around in the dirt. She is still figuring out how big her body is.',
+    profilePhoto: Images.Mobley1,
   },
-  {
-    title: 'Favourites landscapes 5',
-    subtitle: 'Lorem ipsum dolor sit amet',
-    illustration: 'https://i.imgur.com/pewusMzl.jpg',
+  4: {
+    name: 'Tala',
+    breed: 'German Shepard',
+    description: 'Tala is a puppy at heart, and love sto roll around in the dirt. She is still figuring out how big her body is.',
+    profilePhoto: Images.Mobley6,
   },
-  {
-    title: 'Favourites landscapes 6',
-    subtitle: 'Lorem ipsum dolor sit amet et nuncat',
-    illustration: 'https://i.imgur.com/l49aYS3l.jpg',
+  5: {
+    name: 'Tala',
+    breed: 'German Shepard',
+    description: 'Tala is a puppy at heart, and love sto roll around in the dirt. She is still figuring out how big her body is.',
+    profilePhoto: Images.Lena1,
   },
-];
+};
+
+export default USER_ENTRIES;

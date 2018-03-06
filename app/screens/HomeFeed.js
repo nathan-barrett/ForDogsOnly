@@ -3,6 +3,7 @@ import { StatusBar, Dimensions } from 'react-native';
 import Carousel, { Pagination } from 'react-native-snap-carousel'; // 3.6.0
 import { CarouselPost } from '../components/Carousel';
 import { Container } from '../components/Container';
+import USER_ENTRIES from '../data/data';
 
 import styles from './styles/HomeFeedStyles';
 
@@ -22,7 +23,7 @@ export default class HomeFeed extends Component {
     const { activeScreen } = this.state;
     return (
       <Pagination
-        dotsLength={12}
+        dotsLength={Object.keys(USER_ENTRIES).length}
         activeDotIndex={activeScreen}
         containerStyle={styles.container}
         dotStyle={{
@@ -40,21 +41,22 @@ export default class HomeFeed extends Component {
       />
     );
   }
-  SCREENS = [
-    <CarouselPost source={require('../components/Carousel/images/dog1.jpg')} />,
-    <CarouselPost source={require('../components/Carousel/images/dog5.jpg')} />,
-    <CarouselPost source={require('../components/Carousel/images/dog8.jpg')} />,
-  ];
+
+  renderItem({ item }) {
+    return <CarouselPost data={item} />;
+  }
+
   render() {
+    console.table(Object.values(USER_ENTRIES));
     return (
       <Container>
         <StatusBar backgroundColor="blue" barStyle="light-content" />
         <Carousel
-          ref={ref => this.carouselRef = ref}
+          ref={ref => this.carouselRef}
           onSnapToItem={index => this.setState({ activeScreen: index })}
-
-          data={this.SCREENS}
-          renderItem={({ item }) => item}
+          loop
+          data={Object.values(USER_ENTRIES)}
+          renderItem={this.renderItem}
           sliderWidth={SCREEN_WIDTH}
           itemWidth={SCREEN_WIDTH}
           itemHeight={SCREEN_HEIGHT}
