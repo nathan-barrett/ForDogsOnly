@@ -8,7 +8,7 @@ function wp(percentage) {
   return Math.round(value);
 }
 
-const slideHeight = viewportHeight * 0.36;
+const slideHeight = viewportHeight * 0.85;
 const slideWidth = wp(75);
 const itemHorizontalMargin = wp(2);
 
@@ -38,7 +38,7 @@ export default StyleSheet.create({
   },
   imageContainer: {
     flex: 1,
-    marginBottom: IS_IOS ? 0 : -1, // Prevent a random Android rendering issue
+    marginBottom: 0,
     backgroundColor: 'white',
     borderTopLeftRadius: entryBorderRadius,
     borderTopRightRadius: entryBorderRadius,
@@ -55,16 +55,13 @@ export default StyleSheet.create({
     borderTopRightRadius: entryBorderRadius,
   },
   // image's border radius is buggy on iOS; let's hack it!
-  // radiusMask: {
-  //   position: 'absolute',
-  //   bottom: 0,
-  //   left: 0,
-  //   right: 0,
-  //   height: entryBorderRadius,
-  //   backgroundColor: 'white',
-  // },
-  radiusMaskEven: {
-    backgroundColor: 'black',
+  radiusMask: {
+    position: 'absolute',
+    bottom: 0,
+    left: 0,
+    right: 0,
+    height: entryBorderRadius,
+    backgroundColor: 'white',
   },
   textContainer: {
     justifyContent: 'center',
@@ -75,25 +72,16 @@ export default StyleSheet.create({
     borderBottomLeftRadius: entryBorderRadius,
     borderBottomRightRadius: entryBorderRadius,
   },
-  textContainerEven: {
-    backgroundColor: 'black',
-  },
   title: {
     color: 'black',
     fontSize: 13,
     fontWeight: 'bold',
     letterSpacing: 0.5,
   },
-  titleEven: {
-    color: 'white',
-  },
   subtitle: {
     marginTop: 6,
     color: 'grey',
     fontSize: 12,
     fontStyle: 'italic',
-  },
-  subtitleEven: {
-    color: 'rgba(255, 255, 255, 0.7)',
   },
 });

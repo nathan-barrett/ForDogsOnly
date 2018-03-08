@@ -35,6 +35,9 @@ export default class CarouselPost extends Component {
         </View>
         <View style={styles.textContainer}>
           {nameTitle}
+          <Text style={styles.subtitle}>
+            {breed}
+          </Text>
         </View>
       </TouchableOpacity>
     );
