@@ -1,16 +1,70 @@
-import EStyleSheet from 'react-native-extended-stylesheet';
-import { Dimensions } from 'react-native';
+import { StyleSheet } from 'react-native';
 
-const screenHeight = Dimensions.get('window').height;
-const screenWidth = Dimensions.get('window').width;
+export const colors = {
+  black: '#1a1917',
+  gray: '#888888',
+  background1: '#B721FF',
+  background2: '#21D4FD',
+};
 
-export default EStyleSheet.create({
+export default StyleSheet.create({
+  safeArea: {
+    flex: 1,
+    backgroundColor: 'black',
+  },
   container: {
-    zIndex: 2,
-    width: screenWidth,
+    flex: 1,
+    backgroundColor: 'cyan',
+  },
+  gradient: {
+    ...StyleSheet.absoluteFillObject,
+  },
+  scrollview: {
+    flex: 1,
+  },
+  exampleContainer: {
+    // paddingVertical: 30,
+  },
+  exampleContainerDark: {
+    backgroundColor: 'black',
+  },
+  exampleContainerLight: {
+    backgroundColor: 'white',
+  },
+  title: {
+    paddingHorizontal: 30,
     backgroundColor: 'transparent',
-    paddingVertical: 24,
-    justifyContent: 'space-between',
-    alignItems: 'center',
+    color: 'rgba(255, 255, 255, 0.9)',
+    fontSize: 20,
+    fontWeight: 'bold',
+    textAlign: 'center',
+  },
+  titleDark: {
+    color: 'black',
+  },
+  subtitle: {
+    marginTop: 5,
+    paddingHorizontal: 30,
+    backgroundColor: 'transparent',
+    color: 'rgba(255, 255, 255, 0.75)',
+    fontSize: 13,
+    fontStyle: 'italic',
+    textAlign: 'center',
+  },
+  slider: {
+    marginTop: 15,
+    overflow: 'visible', // for custom animations
+  },
+  sliderContentContainer: {
+    paddingVertical: 10, // for custom animation
+  },
+  paginationContainer: {
+    paddingVertical: 8,
+  },
+  paginationDot: {
+    width: 8,
+    height: 8,
+    borderRadius: 4,
+    marginHorizontal: 8,
   },
 });

@@ -8,6 +8,7 @@ EStyleSheet.build({
   $white: '#FFFFFF',
   $primaryOrange: '#FFBFA8',
   $primaryBlue: '#23B5D3',
+  $outline: 1,
 });
 
 export default () => <HomeFeed />;
