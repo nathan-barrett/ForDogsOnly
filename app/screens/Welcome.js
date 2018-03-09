@@ -19,7 +19,7 @@ class Welcome extends Component {
   render() {
     return (
       <Container>
-        <StatusBar backgroundColor="blue" barStyle="light-content" />
+        <StatusBar backgroundColor="blue" barStyle="dark-content" />
         <Logo />
         <WelcomeText />
         <LoginButton onPress={this.handleLoginPress} buttonText="Login" />

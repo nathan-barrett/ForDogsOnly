@@ -18,7 +18,7 @@ class Profile extends Component {
    render() {
      return (
        <ScrollContainer>
-         <StatusBar backgroundColor="blue" barStyle="light-content" />
+         <StatusBar barStyle="light-content" />
          <ProfilePicture />
          <BioText />
          <TouchableHighlight onPress={this.onNavigate}>

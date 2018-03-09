@@ -7,13 +7,13 @@ export default EStyleSheet.create({
   container: {
     flex: 1,
     alignItems: 'center',
-    backgroundColor: 'transparent',
+    backgroundColor: '#cfd8dc',
     justifyContent: 'center',
   },
   startContainer: {
     flex: 1,
     alignItems: 'center',
-    backgroundColor: '$primaryOrange',
+    backgroundColor: '#cfd8dc',
     justifyContent: 'flex-start',
     paddingHorizontal: 15,
   },
@@ -23,7 +23,7 @@ export default EStyleSheet.create({
     alignItems: 'center',
     justifyContent: 'flex-start',
     flex: 1,
-    backgroundColor: '$primaryOrange',
+    backgroundColor: '#cfd8dc',
     paddingHorizontal: 15,
   },
   ScrollContainer: {

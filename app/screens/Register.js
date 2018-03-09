@@ -17,7 +17,7 @@ class Register extends Component {
   render() {
     return (
       <FormContainer style={{ justifyContent: 'flex-start' }}>
-        <StatusBar backgroundColor="blue" barStyle="default" />
+        <StatusBar barStyle="light-content" />
         <RegistrationForm />
         <SubmitButton
           onPress={this.handleLoginPress}

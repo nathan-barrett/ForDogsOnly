@@ -7,6 +7,8 @@ import CreateProfile from '../screens/CreateProfile';
 import Profile from '../screens/Profile';
 import HomeFeed from '../screens/HomeFeed';
 
+import styles from './styles';
+
 const WelcomeStack = StackNavigator(
   {
     Welcome: {
@@ -20,12 +22,16 @@ const WelcomeStack = StackNavigator(
       navigationOptions: {
         headerTitle: 'Register',
         headerBackTitle: null,
+        headerStyle: { backgroundColor: '#373737' },
+        headerTintColor: 'white',
       },
     },
     CreateProfile: {
       screen: CreateProfile,
       navigationOptions: {
         headerTitle: 'Register Profile',
+        headerStyle: { backgroundColor: '#373737' },
+        headerTintColor: 'white',
       },
     },
   },
@@ -39,6 +45,8 @@ const ProfileStack = StackNavigator({
     screen: Profile,
     navigationOptions: {
       headerTitle: 'Profile',
+      headerStyle: { backgroundColor: '#373737' },
+      headerTintColor: 'white',
     },
   },
 }:
@@ -50,6 +58,11 @@ const HomeFeedStack = StackNavigator(
   {
     HomeFeed: {
       screen: HomeFeed,
+      navigationOptions: {
+        headerTitle: 'Home',
+        headerStyle: { backgroundColor: '#373737' },
+        headerTintColor: 'white',
+      },
     },
   },
   {

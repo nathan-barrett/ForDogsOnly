@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Image, Text, View, TouchableOpacity } from 'react-native';
+import Icon from 'react-native-vector-icons/FontAwesome';
 import PropTypes from 'prop-types';
 
 import styles from './styles';
@@ -23,7 +24,6 @@ export default class CarouselPost extends Component {
       <TouchableOpacity
         activeOpacity={1}
         style={styles.slideInnerContainer}
-        onPress={() => { alert(`You've clicked '${name}'`); }}
       >
         <View style={styles.shadow} />
         <View style={styles.imageContainer}>
@@ -38,6 +38,12 @@ export default class CarouselPost extends Component {
           <Text style={styles.subtitle}>
             {breed}
           </Text>
+          <TouchableOpacity
+            onPress={() => { alert(`You've clicked '${name}'`); }}
+            style={styles.icon}
+          >
+            <Icon name="chevron-right" size={30} color="grey" />
+          </TouchableOpacity>
         </View>
       </TouchableOpacity>
     );

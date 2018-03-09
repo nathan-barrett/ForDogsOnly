@@ -2,7 +2,7 @@ import { StyleSheet } from 'react-native';
 
 export const colors = {
   black: '#1a1917',
-  gray: '#888888',
+  background: '#cfd8dc',
   background1: '#B721FF',
   background2: '#21D4FD',
 };
@@ -10,11 +10,11 @@ export const colors = {
 export default StyleSheet.create({
   safeArea: {
     flex: 1,
-    backgroundColor: 'black',
+    backgroundColor: '#cfd8dc',
   },
   container: {
     flex: 1,
-    backgroundColor: 'cyan',
+    // backgroundColor: 'cyan',
   },
   gradient: {
     ...StyleSheet.absoluteFillObject,
@@ -24,9 +24,6 @@ export default StyleSheet.create({
   },
   exampleContainer: {
     // paddingVertical: 30,
-  },
-  exampleContainerDark: {
-    backgroundColor: 'black',
   },
   exampleContainerLight: {
     backgroundColor: 'white',
@@ -59,12 +56,12 @@ export default StyleSheet.create({
     paddingVertical: 10, // for custom animation
   },
   paginationContainer: {
+    justifyContent: 'space-between',
     paddingVertical: 8,
   },
   paginationDot: {
     width: 8,
     height: 8,
     borderRadius: 4,
-    marginHorizontal: 8,
   },
 });

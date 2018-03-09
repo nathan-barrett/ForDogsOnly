@@ -17,7 +17,7 @@ class CreateProfile extends Component {
   render() {
     return (
       <FormContainer style={{ justifyContent: 'flex-start' }}>
-        <StatusBar backgroundColor="blue" barStyle="default" />
+        <StatusBar barStyle="light-content" />
         <ProfileForm />
         <SubmitButton
           onPress={this.handleLoginPress}

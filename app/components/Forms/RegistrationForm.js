@@ -9,6 +9,7 @@ const RegistrationForm = () => (
     <TextInput
       style={styles.input}
       placeholder="Full Name"
+      selectionColor="orange"
     />
     <TextInput
       style={styles.input}

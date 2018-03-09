@@ -8,7 +8,7 @@ function wp(percentage) {
   return Math.round(value);
 }
 
-const slideHeight = viewportHeight * 0.85;
+const slideHeight = viewportHeight * 0.8;
 const slideWidth = wp(75);
 const itemHorizontalMargin = wp(2);
 
@@ -83,5 +83,11 @@ export default StyleSheet.create({
     color: 'grey',
     fontSize: 12,
     fontStyle: 'italic',
+  },
+  icon: {
+    position: 'absolute',
+    alignSelf: 'flex-end',
+    right: 10,
+
   },
 });
