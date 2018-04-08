@@ -6,13 +6,12 @@ export default EStyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     backgroundColor: '$primaryBlue',
-    width: 190,
+    width: 300,
     borderRadius: 8,
-    marginTop: 80,
 
   },
   loginText: {
-    fontWeight: '600',
+    fontWeight: 'bold',
     fontSize: 20,
     color: '$white',
     paddingHorizontal: 16,
@@ -28,5 +27,11 @@ export default EStyleSheet.create({
     width: 190,
     borderRadius: 8,
     marginTop: 40,
+  },
+  profile: {
+    alignItems: 'center',
+  },
+  profileText: {
+    fontWeight: 'bold',
   },
 });

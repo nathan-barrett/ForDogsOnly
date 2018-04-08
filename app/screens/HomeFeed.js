@@ -20,16 +20,6 @@ export default class HomeFeed extends Component {
     };
   }
 
-  get gradient() {
-    return (
-      <LinearGradient
-        colors={[colors.background1, colors.background2]}
-        startPoint={{ x: 1, y: 0 }}
-        endPoint={{ x: 0, y: 1 }}
-        style={styles.gradient}
-      />
-    );
-  }
 
   renderItem({ item }) {
     return <CarouselPost data={item} />;

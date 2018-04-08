@@ -24,6 +24,10 @@ export default StyleSheet.create({
     paddingHorizontal: itemHorizontalMargin,
     paddingBottom: 18, // needed for shadow
   },
+  WelcomeSlideInnerContainer: {
+    width: viewportWidth,
+    height: viewportHeight,
+  },
   shadow: {
     position: 'absolute',
     top: 0,
@@ -43,8 +47,8 @@ export default StyleSheet.create({
     borderTopLeftRadius: entryBorderRadius,
     borderTopRightRadius: entryBorderRadius,
   },
-  imageContainerEven: {
-    backgroundColor: 'black',
+  WelcomeImageContainer: {
+    flex: 1,
   },
   image: {
     resizeMode: 'cover',
@@ -53,6 +57,11 @@ export default StyleSheet.create({
     borderRadius: entryBorderRadius,
     borderTopLeftRadius: entryBorderRadius,
     borderTopRightRadius: entryBorderRadius,
+  },
+  WelcomeImage: {
+    resizeMode: 'contain',
+    height: '100%',
+    width: '100%',
   },
   // image's border radius is buggy on iOS; let's hack it!
   radiusMask: {

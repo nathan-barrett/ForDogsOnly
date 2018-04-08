@@ -1,7 +1,7 @@
 import { Dimensions } from 'react-native';
 import EStyleSheet from 'react-native-extended-stylesheet';
 
-const imageWidth = Dimensions.get('window').width / 2;
+const imageWidth = Dimensions.get('window').width / 1.2;
 
 export default EStyleSheet.create({
   $largeImageSize: imageWidth / 2,
@@ -17,9 +17,14 @@ export default EStyleSheet.create({
     height: imageWidth,
   },
   logo: {
-    tintColor: '$primaryBlue',
+    // tintColor: '$primaryBlue',
     width: imageWidth,
-    height: imageWidth,
-    marginBottom: 20,
+    backgroundColor: 'rgba(52, 52, 52, 0.4)',
+    height: 210,
+    borderRadius: 15,
+    alignItems: 'center',
+
+
+    // marginBottom: 20,
   },
 });
