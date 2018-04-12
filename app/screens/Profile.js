@@ -1,11 +1,16 @@
 import React, { Component } from 'react';
-import { StatusBar, TouchableHighlight, Text } from 'react-native';
+import {
+  StatusBar,
+  Text,
+  View,
+} from 'react-native';
 import PropTypes from 'prop-types';
 
 
-import { ScrollContainer } from '../components/Container';
-import { ProfilePicture, ImagePosts } from '../components/Images';
-import { BioText } from '../components/Text';
+import { ProfileTop } from '../components/Container';
+import { ProfilePicture } from '../components/Images';
+import { ProfileText } from '../components/Text';
+import styles from './styles/ProfileStyles';
 
 
 class Profile extends Component {
@@ -17,19 +22,17 @@ class Profile extends Component {
    };
    render() {
      return (
-       <ScrollContainer>
+       <View style={styles.profileContainer}>
          <StatusBar barStyle="light-content" />
          <ProfilePicture />
-         <BioText />
-         <TouchableHighlight onPress={this.onNavigate}>
-           <Text>Go Home</Text>
-         </TouchableHighlight>
 
-         <ImagePosts source={require('../components/Images/assets/dog4.jpg')} />
-         <ImagePosts source={require('../components/Images/assets/dog1.jpg')} />
-         <ImagePosts source={require('../components/Images/assets/dog3.jpg')} />
-         <ImagePosts source={require('../components/Images/assets/dog2.png')} />
-       </ScrollContainer>
+         <View style={styles.bottom}>
+           <ProfileTop />
+           <View style={{ paddingHorizontal: 15 }}>
+             <ProfileText />
+           </View>
+         </View>
+       </View>
      );
    }
 }

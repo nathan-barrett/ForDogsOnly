@@ -12,10 +12,12 @@ export default EStyleSheet.create({
     marginHorizontal: 15,
 
   },
-  bioName: {
+  name: {
     fontSize: 28,
-    fontWeight: '600',
-    paddingTop: 10,
+    fontWeight: '800',
+  },
+  gender: {
+    margin: 5,
   },
   bioBreed: {
     fontSize: 14,

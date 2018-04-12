@@ -2,6 +2,7 @@ import EStyleSheet from 'react-native-extended-stylesheet';
 import { Dimensions } from 'react-native';
 
 const screenHeight = Dimensions.get('window').height;
+// const screenWidth = Dimensions.get('window').height;
 
 export default EStyleSheet.create({
   container: {
@@ -28,5 +29,14 @@ export default EStyleSheet.create({
   },
   ScrollContainer: {
     alignItems: 'center',
+  },
+  profileTop: {
+    backgroundColor: 'white',
+    top: -20,
+    height: 20,
+    position: 'absolute',
+    width: '100%',
+    borderTopRightRadius: 20,
+    borderTopLeftRadius: 20,
   },
 });

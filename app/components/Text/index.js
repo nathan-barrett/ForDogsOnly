@@ -1,4 +1,4 @@
-import BioText from './BioText';
+import ProfileText from './ProfileText';
 import styles from './styles';
 
-export { styles, BioText };
+export { styles, ProfileText };
