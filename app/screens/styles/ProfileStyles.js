@@ -15,4 +15,7 @@ export default EStyleSheet.create({
     // borderTopRightRadius: 25,
     // borderTopLeftRadius: 25,
   },
+  messageButton: {
+    alignItems: 'center',
+  },
 });

@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import {
   StatusBar,
-  Text,
   View,
 } from 'react-native';
 import PropTypes from 'prop-types';
@@ -9,7 +8,8 @@ import PropTypes from 'prop-types';
 
 import { ProfileTop } from '../components/Container';
 import { ProfilePicture } from '../components/Images';
-import { ProfileText } from '../components/Text';
+import { ProfileText, ProfileDetails, ProfileDescription } from '../components/Text';
+import { LoginButton } from '../components/Button';
 import styles from './styles/ProfileStyles';
 
 
@@ -30,6 +30,14 @@ class Profile extends Component {
            <ProfileTop />
            <View style={{ paddingHorizontal: 15 }}>
              <ProfileText />
+             <ProfileDetails />
+             <ProfileDescription />
+             <View style={{ alignItems: 'center', marginTop: 50 }}>
+               <LoginButton
+                 onPress={() => alert('message press')}
+                 buttonText="Message Dog"
+               />
+             </View>
            </View>
          </View>
        </View>

@@ -44,9 +44,7 @@ const ProfileStack = StackNavigator({
   Profile: {
     screen: Profile,
     navigationOptions: {
-      headerTitle: 'Profile',
-      headerStyle: { backgroundColor: '#373737' },
-      headerTintColor: 'white',
+      header: () => null,
     },
   },
 }:
