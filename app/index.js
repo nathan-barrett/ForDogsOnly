@@ -1,7 +1,10 @@
-import React from 'react';
+import React, { Component } from 'react';
 import EStyleSheet from 'react-native-extended-stylesheet';
 import { Dimensions } from 'react-native';
+import { Provider } from 'react-redux';
+
 import Navigator from './config/routes';
+import store from './config/store';
 
 
 EStyleSheet.build({
@@ -14,4 +17,14 @@ EStyleSheet.build({
   // $outline: 1,
 });
 
-export default () => <Navigator />;
+
+export default class App extends Component {
+  render() {
+    return (
+      <Provider store={store}>
+        <Navigator />
+      </Provider>
+
+    );
+  }
+}
