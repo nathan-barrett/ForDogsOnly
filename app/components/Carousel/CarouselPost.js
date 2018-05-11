@@ -7,18 +7,18 @@ import styles from './styles';
 
 
 export default class CarouselPost extends Component {
-  static propTypes = {
-    data: PropTypes.object.isRequired,
-  };
+  handleProfilePress() {
+    this.props.onPress(this.props.data.key);
+  }
 
 
   render() {
-    const { data: { profilePhoto, name, breed } } = this.props;
     const nameTitle = (
       <Text style={styles.title}>
-        { name.toUpperCase() }
+        { this.props.data.name.toUpperCase() }
       </Text>
     );
+
 
     return (
       <TouchableOpacity
@@ -28,7 +28,7 @@ export default class CarouselPost extends Component {
         <View style={styles.shadow} />
         <View style={styles.imageContainer}>
           <Image
-            source={profilePhoto}
+            source={this.props.data.profilePhoto}
             style={styles.image}
           />
           <View style={styles.radiusMask} />
@@ -36,10 +36,10 @@ export default class CarouselPost extends Component {
         <View style={styles.textContainer}>
           {nameTitle}
           <Text style={styles.subtitle}>
-            {breed}
+            {this.props.data.breed}
           </Text>
           <TouchableOpacity
-            onPress={() => { alert(`You've clicked '${name}'`); }}
+            onPress={this.handleProfilePress.bind(this)}
             style={styles.icon}
           >
             <Icon name="chevron-right" size={30} color="grey" />
@@ -49,3 +49,8 @@ export default class CarouselPost extends Component {
     );
   }
 }
+
+CarouselPost.propTypes = {
+  data: PropTypes.object.isRequired,
+  onPress: PropTypes.func,
+};

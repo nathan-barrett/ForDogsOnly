@@ -13,7 +13,7 @@ class Welcome extends Component {
   }
 
   handleLoginPress = () => {
-    this.props.navigation.navigate('Profile');
+    this.props.navigation.navigate('HomeFeed');
   }
 
   handleCreateProfilePress = () => {

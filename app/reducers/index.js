@@ -1,6 +1,8 @@
 import { combineReducers } from 'redux';
 import selectedDogReducer from './SelectedDogReducer';
+import DogDataReducer from './DogDataReducer';
 
 export default combineReducers({
-  selectedDogReducer,
+  selectedDog: selectedDogReducer,
+  dogData: DogDataReducer,
 });

@@ -3,7 +3,7 @@ import { StatusBar, View, Platform, SafeAreaView } from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
 import Carousel, { Pagination } from 'react-native-snap-carousel'; // 3.6.0
 import { CarouselPost } from '../components/Carousel';
-import USER_ENTRIES from '../data/data';
+
 
 import { sliderWidth, itemWidth } from '../components/Carousel/styles';
 import styles, { colors } from './styles/HomeFeedStyles';
@@ -18,11 +18,20 @@ export default class HomeFeed extends Component {
     this.state = {
       slider1ActiveSlide: SLIDER_1_FIRST_ITEM,
     };
+    // this.navigateToProfile = this.navigateToProfile.bind(this);
   }
 
+  navigateToProfile = (id) => {
+    this.props.changeSelectedId(id);
+    this.props.navigation.navigate('Profile');
+  }
 
   renderItem({ item }) {
-    return <CarouselPost data={item} />;
+    return (
+      <CarouselPost
+        data={item}
+        onPress={this.navigateToProfile}
+      />);
   }
 
 
@@ -36,8 +45,8 @@ export default class HomeFeed extends Component {
             <StatusBar backgroundColor="blue" barStyle="light-content" />
             <Carousel
               ref={ref => this.carouselRef}
-              data={Object.values(USER_ENTRIES)}
-              renderItem={this.renderItem}
+              data={Object.values(this.props.dogData)}
+              renderItem={item => this.renderItem(item)}
               onSnapToItem={index => this.setState({ slider1ActiveSlide: index })}
               inactiveSlideScale={0.94}
               inactiveSlideOpacity={0.7}
@@ -49,7 +58,7 @@ export default class HomeFeed extends Component {
               itemWidth={itemWidth}
             />
             <Pagination
-              dotsLength={Object.keys(USER_ENTRIES).length}
+              dotsLength={Object.keys(this.props.dogData).length}
               activeDotIndex={slider1ActiveSlide}
               containerStyle={styles.paginationContainer}
               dotColor="rgba(255, 255, 255, 0.92)"

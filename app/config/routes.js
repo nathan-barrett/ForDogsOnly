@@ -5,9 +5,8 @@ import Welcome from '../screens/Welcome';
 import Register from '../screens/Register';
 import CreateProfile from '../screens/CreateProfile';
 import Profile from '../screens/Profile';
-import HomeFeed from '../screens/HomeFeed';
+import HomeFeedContainer from '../screens/HomeFeed_Container';
 
-import styles from './styles';
 
 const WelcomeStack = StackNavigator(
   {
@@ -55,7 +54,7 @@ const ProfileStack = StackNavigator({
 const HomeFeedStack = StackNavigator(
   {
     HomeFeed: {
-      screen: HomeFeed,
+      screen: HomeFeedContainer,
       navigationOptions: {
         headerTitle: 'Home',
         headerStyle: { backgroundColor: '#373737' },
