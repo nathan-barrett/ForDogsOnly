@@ -23,11 +23,11 @@ export default class ProfilePicture extends Component {
   setImages() {
     this.setState({
       items: [
-        { image: Images.Mobley1, css: styles.slide, imageStyle: styles.image },
-        { image: Images.Mobley2, css: styles.slide, imageStyle: styles.image },
-        { image: Images.Mobley3, css: styles.slide, imageStyle: styles.image },
-        { image: Images.Mobley4, css: styles.slide, imageStyle: styles.image },
-        { image: Images.Mobley5, css: styles.slide, imageStyle: styles.image },
+        { image: Images.Mobley1 },
+        { image: Images.Mobley2 },
+        { image: Images.Mobley3 },
+        { image: Images.Mobley4 },
+        { image: Images.Mobley5 },
       ],
     });
   }
@@ -39,9 +39,9 @@ export default class ProfilePicture extends Component {
         showsPagination={false}
       >
         {this.state.items.map((item, key) => (
-          <View key={key} style={item.css}>
+          <View key={key} style={styles.slide}>
             <Image
-              style={item.imageStyle}
+              style={styles.image}
               source={item.image}
               resizeMode="contain"
             />

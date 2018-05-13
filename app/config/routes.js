@@ -4,7 +4,7 @@ import { StackNavigator } from 'react-navigation';
 import Welcome from '../screens/Welcome';
 import Register from '../screens/Register';
 import CreateProfile from '../screens/CreateProfile';
-import Profile from '../screens/Profile';
+import ProfileContainer from '../screens/Profile_Container';
 import HomeFeedContainer from '../screens/HomeFeed_Container';
 
 
@@ -41,7 +41,7 @@ const WelcomeStack = StackNavigator(
 
 const ProfileStack = StackNavigator({
   Profile: {
-    screen: Profile,
+    screen: ProfileContainer,
     navigationOptions: {
       header: () => null,
     },

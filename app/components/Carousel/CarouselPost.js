@@ -42,7 +42,7 @@ export default class CarouselPost extends Component {
             onPress={this.handleProfilePress.bind(this)}
             style={styles.icon}
           >
-            <Icon name="chevron-right" size={30} color="grey" />
+            <Icon name="chevron-up" size={30} color="grey" />
           </TouchableOpacity>
         </View>
       </TouchableOpacity>

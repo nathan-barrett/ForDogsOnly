@@ -20,7 +20,10 @@ class Profile extends Component {
    onNavigate = () => {
      this.props.navigation.navigate('HomeFeed');
    };
+
    render() {
+     const data = this.props.dogData[this.props.selectedId];
+
      return (
        <View style={styles.profileContainer}>
          <StatusBar barStyle="light-content" />
@@ -29,12 +32,19 @@ class Profile extends Component {
          <View style={styles.bottom}>
            <ProfileTop />
            <View style={{ paddingHorizontal: 15 }}>
-             <ProfileText />
-             <ProfileDetails />
+             <ProfileText
+               name={data.name}
+               gender={data.gender}
+             />
+             <ProfileDetails
+               breed={data.breed}
+               size={data.size}
+               age={data.age}
+             />
              <ProfileDescription />
              <View style={{ alignItems: 'center', marginTop: 50 }}>
                <LoginButton
-                 onPress={() => alert('message press')}
+                 onPress={() => console.log('this.props.dogData[selectedId]')}
                  buttonText="Message Dog"
                />
              </View>
@@ -44,5 +54,11 @@ class Profile extends Component {
      );
    }
 }
+
+Profile.propTypes = {
+  dogData: PropTypes.object,
+  selectedId: PropTypes.number,
+
+};
 
 export default Profile;
