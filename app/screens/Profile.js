@@ -23,11 +23,14 @@ class Profile extends Component {
 
    render() {
      const data = this.props.dogData[this.props.selectedId];
+     console.log(data.photos);
 
      return (
        <View style={styles.profileContainer}>
          <StatusBar barStyle="light-content" />
-         <ProfilePicture />
+         <ProfilePicture
+           photos={data.photos}
+         />
 
          <View style={styles.bottom}>
            <ProfileTop />
@@ -41,7 +44,9 @@ class Profile extends Component {
                size={data.size}
                age={data.age}
              />
-             <ProfileDescription />
+             <ProfileDescription
+               description={data.description}
+             />
              <View style={{ alignItems: 'center', marginTop: 50 }}>
                <LoginButton
                  onPress={() => console.log('this.props.dogData[selectedId]')}

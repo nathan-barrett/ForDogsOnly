@@ -48,13 +48,17 @@ ProfileDetails.propTypes = {
   age: PropTypes.string,
 };
 
-const ProfileDescription = () => (
+const ProfileDescription = props => (
   <View style={styles.descriptionContainer}>
     <Text style={styles.descriptionText}>
-      Tala is a puppy at heart, and love sto roll around in the dirt. She is still figuring out how big her body is. Tala is a puppy at heart, and love sto roll around in the dirt. She is still figuring out how big her body is.
+      {props.description}
     </Text>
   </View>
 );
+
+ProfileDescription.propTypes = {
+  description: PropTypes.string,
+};
 
 
 export { ProfileText, ProfileDetails, ProfileDescription };
