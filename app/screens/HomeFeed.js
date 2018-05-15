@@ -24,6 +24,7 @@ export default class HomeFeed extends Component {
   navigateToProfile = (id) => {
     this.props.changeSelectedId(id);
     this.props.navigation.navigate('Profile');
+    console.log(this.props.state);
   }
 
   renderItem({ item }) {
