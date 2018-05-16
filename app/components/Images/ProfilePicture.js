@@ -10,25 +10,49 @@ import PropTypes from 'prop-types';
 import styles from './styles';
 
 export default class ProfilePicture extends Component {
-  render() {
+  constructor(props) {
+    super(props);
+    this.state = {
+      items: [],
+    };
+    this.renderImages = this.renderImages.bind(this);
+  }
+  componentDidMount() {
+    this.renderImages();
+  }
+  renderImages = () => {
     const data = this.props.photos;
-    console.log(data);
+    const items = [];
+    Object.keys(data).forEach((key) => {
+      const image = Object.assign({}, { image: data[key] });
+      items.push(image);
+    });
+    this.setState({ items });
+  }
+
+
+  render() {
     return (
       <Swiper
         style={styles.wrapper}
         showsButtons
-        showsPagination={false}
+        showsPagination
+        loadMinimal
       >
-        {data.map((item, key) => (
+        {this.state.items.map((image, key) => (
           <View key={key} style={styles.slide}>
             <Image
               style={styles.image}
-              source={item.image}
+              source={{ uri: image.image }}
               resizeMode="contain"
             />
           </View>
-            ))}
+          ))
+          }
       </Swiper>
     );
   }
 }
+ProfilePicture.propTypes = {
+  photos: PropTypes.object,
+};

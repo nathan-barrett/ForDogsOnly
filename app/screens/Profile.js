@@ -20,10 +20,12 @@ class Profile extends Component {
    onNavigate = () => {
      this.props.navigation.navigate('HomeFeed');
    };
+   componentDidMount() {
+     console.log(this.props.dogData[this.props.selectedId]);
+   }
 
    render() {
      const data = this.props.dogData[this.props.selectedId];
-     console.log(data.photos);
 
      return (
        <View style={styles.profileContainer}>

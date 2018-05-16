@@ -25,7 +25,8 @@ export default EStyleSheet.create({
     alignItems: 'center',
   },
   image: {
-    maxWidth: '100%',
+    width: screenWidth,
+    height: screenHeight,
   },
   text: {
     color: '#fff',

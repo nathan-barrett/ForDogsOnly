@@ -1,31 +1,14 @@
-import { createStore, applyMiddleware, compose } from 'redux';
-import { reduxFirestore } from 'redux-firestore';
+import { createStore, applyMiddleware } from 'redux';
 import logger from 'redux-logger';
-import firebase from 'firebase';
-import 'firebase/firestore';
+import thunk from 'redux-thunk';
 
 import rootReducer from '../reducers';
 
-
-const firebaseConfig = {
-  apiKey: 'AIzaSyBxYQHskBzmD9hhtVletHmS4qaUopFFFuk',
-  authDomain: 'for-dogs-only.firebaseapp.com',
-  databaseURL: 'https://for-dogs-only.firebaseio.com',
-  projectId: 'for-dogs-only',
-  storageBucket: 'for-dogs-only.appspot.com',
-  messagingSenderId: '914277979354',
-};
-firebase.initializeApp(firebaseConfig);
-
-firebase.firestore();
-
-const createStoreWithFirebase = compose(reduxFirestore(firebase))(createStore);
-
-const middleware = [];
+const middleware = [thunk];
 
 if (process.env.NODE_ENV === 'development') {
   middleware.push(logger);
 }
 
-const store = createStoreWithFirebase(rootReducer, applyMiddleware(...middleware));
+const store = createStore(rootReducer, applyMiddleware(...middleware));
 export default store;

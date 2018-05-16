@@ -1,3 +1,2 @@
 import { types } from '../constants';
-
-const dogData = firestore.database;
+import firestore from '../config/store';

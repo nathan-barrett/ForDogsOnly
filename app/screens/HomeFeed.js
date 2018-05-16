@@ -20,11 +20,12 @@ export default class HomeFeed extends Component {
     };
     // this.navigateToProfile = this.navigateToProfile.bind(this);
   }
-
+  componentDidMount() {
+    console.log(this.props);
+  }
   navigateToProfile = (id) => {
     this.props.changeSelectedId(id);
     this.props.navigation.navigate('Profile');
-    console.log(this.props.state);
   }
 
   renderItem({ item }) {

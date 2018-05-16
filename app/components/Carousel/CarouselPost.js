@@ -28,7 +28,7 @@ export default class CarouselPost extends Component {
         <View style={styles.shadow} />
         <View style={styles.imageContainer}>
           <Image
-            source={this.props.data.profilePhoto}
+            source={{ uri: this.props.data.profilePhoto }}
             style={styles.image}
           />
           <View style={styles.radiusMask} />

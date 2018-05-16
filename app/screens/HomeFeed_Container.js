@@ -7,7 +7,6 @@ import changeSelectedId from '../actions/AddSelected';
 const mapSTPs = state => ({
   selectedId: state.selectedDog,
   dogData: state.dogData,
-  state,
 });
 
 const mapDTPs = dispatch => ({
