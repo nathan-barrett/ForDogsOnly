@@ -1,4 +1,4 @@
-import { types, firebaseConfig } from '../constants';
+import { types } from '../constants';
 
 
 const dogInfoInitialState = () => ({

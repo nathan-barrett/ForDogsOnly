@@ -96,7 +96,8 @@ export default StyleSheet.create({
   icon: {
     position: 'absolute',
     alignSelf: 'flex-end',
-    right: 10,
+    right: 15,
+    bottom: 25,
 
   },
 });

@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import { View, Text, Image } from 'react-native';
+import { View, Image, TouchableOpacity } from 'react-native';
 import Swiper from 'react-native-swiper';
 import PropTypes from 'prop-types';
+import Icon from 'react-native-vector-icons/FontAwesome';
 
 
 // import { Images } from '../../data/images';
@@ -41,6 +42,12 @@ export default class ProfilePicture extends Component {
       >
         {this.state.items.map((image, key) => (
           <View key={key} style={styles.slide}>
+            <TouchableOpacity
+              onPress={this.props.onPress}
+              style={styles.icon}
+            >
+              <Icon style={{ fontWeight: '600' }}name="long-arrow-left" size={20} color="white" />
+            </TouchableOpacity>
             <Image
               style={styles.image}
               source={{ uri: image.image }}

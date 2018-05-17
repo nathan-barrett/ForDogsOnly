@@ -12,7 +12,7 @@ class CreateProfile extends Component {
     navigation: PropTypes.object,
   }
   handleLoginPress = () => {
-    this.props.navigation.navigate('Profile');
+    this.props.navigation.navigate('HomeFeed');
   }
   render() {
     return (

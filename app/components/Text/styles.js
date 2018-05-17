@@ -33,23 +33,27 @@ export default EStyleSheet.create({
     justifyContent: 'space-between',
   },
   breedRow: {
-    width: '38%',
+    width: '45%',
     paddingHorizontal: 5,
+    alignItems: 'center',
+    justifyContent: 'center',
 
   },
   sizeRow: {
-    width: '24%',
+    width: '25%',
     borderLeftWidth: StyleSheet.hairlineWidth,
     borderRightWidth: StyleSheet.hairlineWidth,
     borderColor: 'grey',
     marginHorizontal: 5,
-    paddingLeft: 20,
+    alignItems: 'center',
+    justifyContent: 'center',
   },
   ageRow: {
-    width: '38%',
+    width: '25%',
     marginHorizontal: 5,
     paddingHorizontal: 5,
-    alignSelf: 'center',
+    alignItems: 'center',
+    justifyContent: 'center',
   },
   detailHeader: {
     fontWeight: 'bold',

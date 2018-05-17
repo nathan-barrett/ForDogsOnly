@@ -1,27 +1,50 @@
 import React, { Component } from 'react';
-import { StatusBar, View, Platform, SafeAreaView } from 'react-native';
-import LinearGradient from 'react-native-linear-gradient';
+import { StatusBar, View, Platform, SafeAreaView, TouchableOpacity } from 'react-native';
 import Carousel, { Pagination } from 'react-native-snap-carousel'; // 3.6.0
+import PropTypes from 'prop-types';
+import Icon from 'react-native-vector-icons/Feather';
+
+
 import { CarouselPost } from '../components/Carousel';
-
-
 import { sliderWidth, itemWidth } from '../components/Carousel/styles';
-import styles, { colors } from './styles/HomeFeedStyles';
+import styles from './styles/HomeFeedStyles';
 
 
 const IS_ANDROID = Platform.OS === 'android';
-const SLIDER_1_FIRST_ITEM = 0;
 
 export default class HomeFeed extends Component {
+  static propTypes = {
+    navigation: PropTypes.object,
+  }
+  static navigationOptions = ({ navigation }) => {
+    const params = navigation.state.params || {};
+    return {
+      headerRight: (
+        <TouchableOpacity
+          onPress={params.userProfile}
+          style={{ marginRight: 10 }}
+        >
+          <Icon
+            name="user"
+            color="white"
+            size={25}
+          />
+        </TouchableOpacity>
+      ),
+    };
+  };
   constructor(props) {
     super(props);
     this.state = {
-      slider1ActiveSlide: SLIDER_1_FIRST_ITEM,
+      slider1ActiveSlide: 0,
     };
-    // this.navigateToProfile = this.navigateToProfile.bind(this);
   }
-  componentDidMount() {
-    console.log(this.props);
+  componentWillMount() {
+    this.props.navigation.setParams({ userProfile: this.navUserProfile });
+  }
+  navUserProfile = () => {
+    this.props.userProfile();
+    this.props.navigation.navigate('Profile');
   }
   navigateToProfile = (id) => {
     this.props.changeSelectedId(id);

@@ -17,21 +17,27 @@ class Profile extends Component {
   static propTypes = {
     navigation: PropTypes.object,
   }
+  componentWillUnmount() {
+    this.props.userProfile();
+  }
    onNavigate = () => {
+     if (this.props.userData.userProfile) {
+       this.props.navigation.navigate('HomeFeed');
+       setTimeout(() => this.props.userProfile(), 500);
+     }
      this.props.navigation.navigate('HomeFeed');
    };
-   componentDidMount() {
-     console.log(this.props.dogData[this.props.selectedId]);
-   }
 
    render() {
-     const data = this.props.dogData[this.props.selectedId];
+     const data = this.props.userData.userProfile ? this.props.userData.dogInfo : this.props.dogData[this.props.selectedId];
+     const buttonText = this.props.userData.userProfile ? 'Edit Profile' : 'Send a Message';
 
      return (
        <View style={styles.profileContainer}>
-         <StatusBar barStyle="light-content" />
+         <StatusBar translucent />
          <ProfilePicture
            photos={data.photos}
+           onPress={this.onNavigate}
          />
 
          <View style={styles.bottom}>
@@ -46,13 +52,18 @@ class Profile extends Component {
                size={data.size}
                age={data.age}
              />
-             <ProfileDescription
-               description={data.description}
-             />
-             <View style={{ alignItems: 'center', marginTop: 50 }}>
+             <View style={{ justifyContent: 'center', alignSelf: 'center' }}>
+               <ProfileDescription
+                 description={data.description}
+               />
+             </View>
+             <View style={{
+                 alignItems: 'center', position: 'absolute', top: 260, right: 38,
+               }}
+             >
                <LoginButton
-                 onPress={() => console.log('this.props.dogData[selectedId]')}
-                 buttonText="Message Dog"
+                 onPress={() => alert('you totally sent a message')}
+                 buttonText={buttonText}
                />
              </View>
            </View>
@@ -64,8 +75,11 @@ class Profile extends Component {
 
 Profile.propTypes = {
   dogData: PropTypes.object,
-  selectedId: PropTypes.number,
-
+  selectedId: PropTypes.oneOfType([
+    PropTypes.number, PropTypes.string,
+  ]),
+  userData: PropTypes.object,
+  userProfile: PropTypes.func,
 };
 
 export default Profile;

@@ -1,4 +1,3 @@
-
 import { InitialState, types } from '../constants';
 
 const DogDataReducer = (state = InitialState.dogData, action) => {

@@ -79,7 +79,6 @@ export default StackNavigator(
     },
   },
   {
-    mode: 'modal',
     headerMode: 'none',
     cardsStyle: { paddingTop: StatusBar.currentHeight },
   },

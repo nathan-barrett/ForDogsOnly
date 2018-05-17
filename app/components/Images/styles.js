@@ -33,4 +33,10 @@ export default EStyleSheet.create({
     fontSize: 30,
     fontWeight: 'bold',
   },
+  icon: {
+    position: 'absolute',
+    top: 25,
+    left: 15,
+    zIndex: 2,
+  },
 });

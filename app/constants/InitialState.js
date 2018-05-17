@@ -1,6 +1,31 @@
 // import { Images } from '../data/images';
 
 const InitialState = {
+  userData: {
+    userProfile: false,
+    userInfo: {
+      firstName: 'Nathan',
+      lastName: 'Barrett',
+      email: 'demeules.barrett@gmail.com',
+      password: 'password',
+    },
+    dogInfo: {
+      name: 'Heathrow',
+      breed: 'Bassethound',
+      age: '1 year',
+      size: 'Medium',
+      description: 'Hey! My name is Heathrow and I am a very cool dog about town. I love pizza and drinking some nice cool water. I enjoy a nice pair of shoes and keeping cool in the warm summer weather. I am looking for some  new friends and thats why i joined the site.',
+      profilePhoto: 'https://storage.googleapis.com/for-dogs-only.appspot.com/photos/dean3.jpg',
+      photos: {
+        1: 'https://storage.googleapis.com/for-dogs-only.appspot.com/photos/dean5.jpg',
+        2: 'https://storage.googleapis.com/for-dogs-only.appspot.com/photos/dean6.jpg',
+        3: 'https://storage.googleapis.com/for-dogs-only.appspot.com/photos/dean3.jpg',
+        4: 'https://storage.googleapis.com/for-dogs-only.appspot.com/photos/dean4.jpg',
+        5: 'https://storage.googleapis.com/for-dogs-only.appspot.com/photos/dean7.jpg',
+        5: 'https://storage.googleapis.com/for-dogs-only.appspot.com/photos/dean1.jpg',
+      },
+    },
+  },
   selectedDog: '',
   dogData: {
     1: {
@@ -9,7 +34,7 @@ const InitialState = {
       age: '3 years',
       gender: 'female',
       size: 'Large',
-      description: 'Tala is a puppy at heart, and love sto roll around in the dirt. She is still figuring out how big her body is.',
+      description: 'Tala is a puppy at heart, and love sto roll around in the dirt. She is still figuring out how big her body is. Tala is a puppy at heart, and love sto roll around in the dirt. She is still figuring out how big her body is.',
       profilePhoto: 'https://storage.googleapis.com/for-dogs-only.appspot.com/photos/tala4.jpg',
       photos: {
         1: 'https://storage.googleapis.com/for-dogs-only.appspot.com/photos/tala1.jpg',
@@ -25,7 +50,7 @@ const InitialState = {
       gender: 'male',
       size: 'Small',
       breed: 'Chihuahua / Corgi Mix',
-      description: 'Tala is a puppy at heart, and love sto roll around in the dirt. She is still figuring out how big her body is.',
+      description: 'Mobley is a sweet pup who loves walks (on the beach?), laying in the sun, and food. He is particularly partial to carrots and will run when he hears us peeling anything, hoping for a snack.',
       profilePhoto: 'https://storage.googleapis.com/for-dogs-only.appspot.com/photos/Mobley4.jpg',
       photos: {
         1: 'https://storage.googleapis.com/for-dogs-only.appspot.com/photos/Mobley1.jpg',
@@ -47,7 +72,7 @@ const InitialState = {
       gender: 'female',
       size: 'Large',
       breed: 'Golden Retreiver',
-      description: 'Tala is a puppy at heart, and love sto roll around in the dirt. She is still figuring out how big her body is.',
+      description: 'Sadie is a shy and quiet dog, but loves to cuddle and enjoys eating all veggies. She comes from a puppy mill, but has gotten used to living with her family and loves the dogs she lives with.',
       profilePhoto: 'https://storage.googleapis.com/for-dogs-only.appspot.com/photos/sadie1.jpg',
       photos: {
         1: 'https://storage.googleapis.com/for-dogs-only.appspot.com/photos/sadie1.jpg',
@@ -61,7 +86,7 @@ const InitialState = {
       gender: 'male',
       breed: 'Chihuahua',
       size: 'Small',
-      description: 'Doug is a cute little dog who loves to play with other dogs and hang out in the sun.',
+      description: 'Doug is a cute little dog who loves to play with other dogs and hang out in the sun. Likes to eat hot cheetos and to play in the yard. Doug is a cute little dog who loves to play with other dogs and hang out in the sun. Likes to eat hot cheetos and to play in the yard',
       profilePhoto: 'https://storage.googleapis.com/for-dogs-only.appspot.com/photos/doug3.jpg',
       photos: {
         1: 'https://storage.googleapis.com/for-dogs-only.appspot.com/photos/doug1.jpg',
@@ -80,11 +105,10 @@ const InitialState = {
       gender: 'female',
       breed: 'Cocker Spaniel',
       size: 'Medium',
-      description: 'Tala is a puppy at heart, and love sto roll around in the dirt. She is still figuring out how big her body is.',
+      description: 'Doggo ipsum bork long bois dat tungg tho length boy, pupperino woofer pupperino, many pats pats. Ruff puggo pupperino such treat wow very biscit, stop it fren doggo doggorino long doggo, aqua doggo heck heckin good boys. super chub fat boi. Maximum borkdrive ',
       profilePhoto: 'https://storage.googleapis.com/for-dogs-only.appspot.com/photos/susan.jpg',
       photos: {
         1: 'https://storage.googleapis.com/for-dogs-only.appspot.com/photos/susan.jpg',
-        2: 'https://storage.googleapis.com/for-dogs-only.appspot.com/photos/susan2.jpg',
       },
       key: 5,
     },
@@ -94,7 +118,7 @@ const InitialState = {
       gender: 'male',
       breed: 'Chuihuahua / Corgi Mix',
       size: 'Medium',
-      description: 'Tala is a puppy at heart, and love sto roll around in the dirt. She is still figuring out how big her body is.',
+      description: 'Buko is a lover of playing catch and chasing squirrels. Doggo ipsum bork long bois dat tungg tho length boy, pupperino woofer pupperino, many pats pats. Ruff puggo pupperino such treat wow very biscit',
       profilePhoto: 'https://storage.googleapis.com/for-dogs-only.appspot.com/photos/buko1.jpg',
       photos: {
         1: 'https://storage.googleapis.com/for-dogs-only.appspot.com/photos/buko1.jpg',
@@ -111,7 +135,7 @@ const InitialState = {
       gender: 'female',
       breed: 'Labrador Retreiver',
       size: 'Large',
-      description: 'Her name is Gaelic for "warrior princess". She’s always looking for spoils (of food).',
+      description: 'Her name is Gaelic for "warrior princess". She’s always looking for spoils (of food). Doggo ipsum bork long bois dat tungg tho length boy, pupperino woofer pupperino, many pats pats.',
       profilePhoto: 'https://storage.googleapis.com/for-dogs-only.appspot.com/photos/aoife1.jpg',
       photos: {
         1: 'https://storage.googleapis.com/for-dogs-only.appspot.com/photos/aoife1.jpg',
@@ -126,7 +150,7 @@ const InitialState = {
       gender: 'male',
       breed: 'Golden Retreiver',
       size: 'Large',
-      description: 'Only the most famous Instagram dog from portland. Hotties only ',
+      description: 'Only the most famous Instagram dog from portland. Hotties only. Doggo ipsum bork long bois dat tungg tho length boy, pupperino woofer pupperino.',
       profilePhoto: 'https://storage.googleapis.com/for-dogs-only.appspot.com/photos/rusty1.jpg',
       photos: {
         1: 'https://storage.googleapis.com/for-dogs-only.appspot.com/photos/rusty1.jpg',
@@ -142,7 +166,7 @@ const InitialState = {
       age: '1 years',
       gender: 'female',
       breed: 'Austrailian Shepard',
-      description: 'Only the most famous Instagram dog from portland. Hotties only ',
+      description: 'Doggo ipsum bork long bois dat tungg tho length boy, pupperino woofer pupperino, many pats pats. Ruff puggo pupperino such treat wow very biscit, stop it fren doggo doggorino long doggo, aqua doggo heck heckin good boys. super chub fat boi. Maximum borkdrive  ',
       profilePhoto: 'https://storage.googleapis.com/for-dogs-only.appspot.com/photos/alana1.jpg',
       photos: {
         1: 'https://storage.googleapis.com/for-dogs-only.appspot.com/photos/alana1.jpg',
@@ -155,7 +179,7 @@ const InitialState = {
       gender: 'female',
       breed: 'Shiba Inu',
       size: 'Medium',
-      description: 'Only the most famous Instagram dog from portland. Hotties only ',
+      description: 'Doggo ipsum bork long bois dat tungg tho length boy, pupperino woofer pupperino, many pats pats. Ruff puggo pupperino such treat wow very biscit, stop it fren doggo doggorino long doggo, aqua doggo heck heckin good boys. super chub fat boi. Maximum borkdrive ',
       profilePhoto: 'https://storage.googleapis.com/for-dogs-only.appspot.com/photos/lola.jpg',
       photos: {
         1: 'https://storage.googleapis.com/for-dogs-only.appspot.com/photos/lola.jpg',
@@ -168,7 +192,7 @@ const InitialState = {
       gender: 'male',
       breed: 'Siberian Husky',
       size: 'Large',
-      description: 'Only the most famous Instagram dog from portland. Hotties only ',
+      description: 'Doggo ipsum bork long bois dat tungg tho length boy, pupperino woofer pupperino, many pats pats. Ruff puggo pupperino such treat wow very biscit, stop it fren doggo doggorino long doggo, aqua doggo heck heckin good boys. super chub fat boi. Maximum borkdrive ',
       profilePhoto: 'https://storage.googleapis.com/for-dogs-only.appspot.com/photos/marko1.jpg',
       photos: {
         1: 'https://storage.googleapis.com/for-dogs-only.appspot.com/photos/marko1.jpg',
@@ -184,7 +208,7 @@ const InitialState = {
       gender: 'male',
       breed: 'Austrailian Shepard',
       size: 'Large',
-      description: 'Only the most famous Instagram dog from portland. Hotties only ',
+      description: 'Doggo ipsum bork long bois dat tungg tho length boy, pupperino woofer pupperino, many pats pats. Ruff puggo pupperino such treat wow very biscit, stop it fren doggo doggorino long doggo, aqua doggo heck heckin good boys. super chub fat boi. Maximum borkdrive ',
       profilePhoto: 'https://storage.googleapis.com/for-dogs-only.appspot.com/photos/roman1.jpg',
       photos: {
         1: 'https://storage.googleapis.com/for-dogs-only.appspot.com/photos/roman1.jpg',
