@@ -23,7 +23,7 @@ class Profile extends Component {
    onNavigate = () => {
      if (this.props.userData.userProfile) {
        this.props.navigation.navigate('HomeFeed');
-       setTimeout(() => this.props.userProfile(), 500);
+       setTimeout(() => this.props.userProfile(), 1000);
      }
      this.props.navigation.navigate('HomeFeed');
    };

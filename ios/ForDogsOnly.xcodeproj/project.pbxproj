@@ -38,15 +38,19 @@
 		2D02E4C81E0B4AEC006451C7 /* libRCTWebSocket-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3E991DF850E9000B6D8A /* libRCTWebSocket-tvOS.a */; };
 		2D16E6881FA4F8E400B85C8A /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D16E6891FA4F8E400B85C8A /* libReact.a */; };
 		2DCD954D1E0B4F2C00145EB5 /* ForDogsOnlyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* ForDogsOnlyTests.m */; };
+		320124DEB654E6EB47A91824 /* libPods-ForDogsOnlyTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 052FC7E2AD93B8B870AB12AA /* libPods-ForDogsOnlyTests.a */; };
 		5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
 		69B2F4E90B7A4A92A6E607A1 /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 59CEEC5B88C14C909CEDF806 /* SimpleLineIcons.ttf */; };
 		75047C8122034AAB80E419FF /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B6733E22C86D4C6D9F04C8E3 /* Ionicons.ttf */; };
 		77E8E1E24CF04A29AF1D4F7A /* Feather.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D745A5DC76ED49999EAC5FEA /* Feather.ttf */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		9B86F2ABF1364AF3AFE769A1 /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 27C88EF8110E4B8B8E2DAF79 /* Foundation.ttf */; };
+		A164A0E9BD224A96A0EDD7E9 /* libUARCTModule.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FCE32A194DD34C539A61A620 /* libUARCTModule.a */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
 		B590FA18435B40AEA5DACFBD /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8C79059371524E0A9B1A3F0C /* Entypo.ttf */; };
+		BF79403DCE114AE31C59D09E /* libPods-ForDogsOnly.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CB316FC84F2195A259371835 /* libPods-ForDogsOnly.a */; };
 		C8D2BDC56AF840FBB303CBE7 /* libRNVectorIcons.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 25B6E90D8ED84CFA9FBCFB30 /* libRNVectorIcons.a */; };
+		CA862A76BECAF0CC9F272519 /* libPods-ForDogsOnly-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BB9281D634D1129D6FDCD884 /* libPods-ForDogsOnly-tvOSTests.a */; };
 		D5A5A7EF04984665A2000AA3 /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6302F009D47D446E84C57CBB /* Octicons.ttf */; };
 		E5C7B348B8B14059ADE82A03 /* libBVLinearGradient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C7C522D5EF8482F9C63735E /* libBVLinearGradient.a */; };
 		F43EFDC7B88E4D219D2328DB /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E58887BABF364916806BE9C1 /* EvilIcons.ttf */; };
@@ -172,6 +176,13 @@
 			proxyType = 2;
 			remoteGlobalIDString = 64AA15081EF7F30100718508;
 			remoteInfo = "BVLinearGradient-tvOS";
+		};
+		03FFF159211371000066CF7F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CBAA0ECB07CB4335ABD67A9D /* UARCTModule.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6E4D17C21EBA7FAA0032DED3;
+			remoteInfo = UARCTModule;
 		};
 		139105C01AF99BAD00B5F7CC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -360,7 +371,10 @@
 		00E356EE1AD99517003FC87E /* ForDogsOnlyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ForDogsOnlyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* ForDogsOnlyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ForDogsOnlyTests.m; sourceTree = "<group>"; };
+		01DBDC3B5186DD848BA6E76F /* Pods-ForDogsOnly.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForDogsOnly.release.xcconfig"; path = "Pods/Target Support Files/Pods-ForDogsOnly/Pods-ForDogsOnly.release.xcconfig"; sourceTree = "<group>"; };
 		030F4C332050F58A0064C812 /* FontAwesome.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = FontAwesome.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; };
+		052FC7E2AD93B8B870AB12AA /* libPods-ForDogsOnlyTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ForDogsOnlyTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		08E23F877A810B8488CDFEE0 /* Pods-ForDogsOnlyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForDogsOnlyTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ForDogsOnlyTests/Pods-ForDogsOnlyTests.release.xcconfig"; sourceTree = "<group>"; };
 		139105B61AF99BAD00B5F7CC /* RCTSettings.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTSettings.xcodeproj; path = "../node_modules/react-native/Libraries/Settings/RCTSettings.xcodeproj"; sourceTree = "<group>"; };
 		139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTWebSocket.xcodeproj; path = "../node_modules/react-native/Libraries/WebSocket/RCTWebSocket.xcodeproj"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* ForDogsOnly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ForDogsOnly.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -377,7 +391,9 @@
 		2D02E4901E0B4A5D006451C7 /* ForDogsOnly-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ForDogsOnly-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D16E6891FA4F8E400B85C8A /* libReact.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libReact.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		36864CD3348D44EE83D5A5D7 /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialCommunityIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf"; sourceTree = "<group>"; };
+		3E3DFE3D33B8490484F6143A /* Pods-ForDogsOnlyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForDogsOnlyTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ForDogsOnlyTests/Pods-ForDogsOnlyTests.debug.xcconfig"; sourceTree = "<group>"; };
 		48472472780C48AA84792BBD /* RNVectorIcons.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNVectorIcons.xcodeproj; path = "../node_modules/react-native-vector-icons/RNVectorIcons.xcodeproj"; sourceTree = "<group>"; };
+		4898D692977204F1B27255F4 /* Pods-ForDogsOnly.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForDogsOnly.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ForDogsOnly/Pods-ForDogsOnly.debug.xcconfig"; sourceTree = "<group>"; };
 		59CEEC5B88C14C909CEDF806 /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = SimpleLineIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; };
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
 		5F862E73BC68487592B7D588 /* Zocial.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Zocial.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Zocial.ttf"; sourceTree = "<group>"; };
@@ -388,11 +404,17 @@
 		9C7C522D5EF8482F9C63735E /* libBVLinearGradient.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libBVLinearGradient.a; sourceTree = "<group>"; };
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
 		B6733E22C86D4C6D9F04C8E3 /* Ionicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Ionicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf"; sourceTree = "<group>"; };
+		BB9281D634D1129D6FDCD884 /* libPods-ForDogsOnly-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ForDogsOnly-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB316FC84F2195A259371835 /* libPods-ForDogsOnly.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ForDogsOnly.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBAA0ECB07CB4335ABD67A9D /* UARCTModule.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = UARCTModule.xcodeproj; path = "../node_modules/urbanairship-react-native/ios/UARCTModule.xcodeproj"; sourceTree = "<group>"; };
 		D2DA5DA83F24478DA4A80ACE /* FontAwesome.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; };
 		D745A5DC76ED49999EAC5FEA /* Feather.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Feather.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Feather.ttf"; sourceTree = "<group>"; };
+		D828611694980F203CDD3FDD /* Pods-ForDogsOnly-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForDogsOnly-tvOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ForDogsOnly-tvOSTests/Pods-ForDogsOnly-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		D8DD8948F81E4D4992DEBF20 /* BVLinearGradient.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = BVLinearGradient.xcodeproj; path = "../node_modules/react-native-linear-gradient/BVLinearGradient.xcodeproj"; sourceTree = "<group>"; };
 		E58887BABF364916806BE9C1 /* EvilIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = EvilIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; };
 		EC1F792159DC4B8B9485FFF0 /* MaterialIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; };
+		F43C789178E9830CE028EF43 /* Pods-ForDogsOnly-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForDogsOnly-tvOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ForDogsOnly-tvOSTests/Pods-ForDogsOnly-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		FCE32A194DD34C539A61A620 /* libUARCTModule.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libUARCTModule.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -401,6 +423,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				140ED2AC1D01E1AD002B40FF /* libReact.a in Frameworks */,
+				320124DEB654E6EB47A91824 /* libPods-ForDogsOnlyTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,6 +446,8 @@
 				139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */,
 				E5C7B348B8B14059ADE82A03 /* libBVLinearGradient.a in Frameworks */,
 				C8D2BDC56AF840FBB303CBE7 /* libRNVectorIcons.a in Frameworks */,
+				A164A0E9BD224A96A0EDD7E9 /* libUARCTModule.a in Frameworks */,
+				BF79403DCE114AE31C59D09E /* libPods-ForDogsOnly.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -445,6 +470,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA862A76BECAF0CC9F272519 /* libPods-ForDogsOnly-tvOSTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -523,6 +549,7 @@
 			children = (
 				9C7C522D5EF8482F9C63735E /* libBVLinearGradient.a */,
 				25B6E90D8ED84CFA9FBCFB30 /* libRNVectorIcons.a */,
+				FCE32A194DD34C539A61A620 /* libUARCTModule.a */,
 			);
 			name = "Recovered References";
 			sourceTree = "<group>";
@@ -532,6 +559,14 @@
 			children = (
 				03AC5C49204EF34C00732412 /* libBVLinearGradient.a */,
 				03AC5C4B204EF34C00732412 /* libBVLinearGradient.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		03FFF156211370FE0066CF7F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				03FFF15A211371000066CF7F /* libUARCTModule.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -598,6 +633,9 @@
 			isa = PBXGroup;
 			children = (
 				2D16E6891FA4F8E400B85C8A /* libReact.a */,
+				CB316FC84F2195A259371835 /* libPods-ForDogsOnly.a */,
+				BB9281D634D1129D6FDCD884 /* libPods-ForDogsOnly-tvOSTests.a */,
+				052FC7E2AD93B8B870AB12AA /* libPods-ForDogsOnlyTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -637,6 +675,7 @@
 				139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */,
 				D8DD8948F81E4D4992DEBF20 /* BVLinearGradient.xcodeproj */,
 				48472472780C48AA84792BBD /* RNVectorIcons.xcodeproj */,
+				CBAA0ECB07CB4335ABD67A9D /* UARCTModule.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -660,6 +699,7 @@
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				03AC5C0E204EF34600732412 /* Recovered References */,
 				DFA4320EA65747D1B2557F8D /* Resources */,
+				C58241BD62F6B0312786D89E /* Pods */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -684,6 +724,19 @@
 				2D16E6721FA4F8DC00B85C8A /* libRCTBlob-tvOS.a */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		C58241BD62F6B0312786D89E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4898D692977204F1B27255F4 /* Pods-ForDogsOnly.debug.xcconfig */,
+				01DBDC3B5186DD848BA6E76F /* Pods-ForDogsOnly.release.xcconfig */,
+				F43C789178E9830CE028EF43 /* Pods-ForDogsOnly-tvOSTests.debug.xcconfig */,
+				D828611694980F203CDD3FDD /* Pods-ForDogsOnly-tvOSTests.release.xcconfig */,
+				3E3DFE3D33B8490484F6143A /* Pods-ForDogsOnlyTests.debug.xcconfig */,
+				08E23F877A810B8488CDFEE0 /* Pods-ForDogsOnlyTests.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		DFA4320EA65747D1B2557F8D /* Resources */ = {
@@ -711,6 +764,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "ForDogsOnlyTests" */;
 			buildPhases = (
+				B1EFEEEE316BBC0122557E80 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
@@ -729,10 +783,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "ForDogsOnly" */;
 			buildPhases = (
+				42870826D0F010C739D1105A /* [CP] Check Pods Manifest.lock */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
+				0AF4994C994F133AF85627F1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -765,6 +821,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "ForDogsOnly-tvOSTests" */;
 			buildPhases = (
+				8299F0C851CF1B73836521F9 /* [CP] Check Pods Manifest.lock */,
 				2D02E48C1E0B4A5D006451C7 /* Sources */,
 				2D02E48D1E0B4A5D006451C7 /* Frameworks */,
 				2D02E48E1E0B4A5D006451C7 /* Resources */,
@@ -791,6 +848,14 @@
 					00E356ED1AD99517003FC87E = {
 						CreatedOnToolsVersion = 6.2;
 						TestTargetID = 13B07F861A680F5B00A75B9A;
+					};
+					13B07F861A680F5B00A75B9A = {
+						DevelopmentTeam = N3Y5T2T9WG;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 0;
+							};
+						};
 					};
 					2D02E47A1E0B4A5D006451C7 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -870,6 +935,10 @@
 				{
 					ProductGroup = 030F4C2E2050F5070064C812 /* Products */;
 					ProjectRef = 48472472780C48AA84792BBD /* RNVectorIcons.xcodeproj */;
+				},
+				{
+					ProductGroup = 03FFF156211370FE0066CF7F /* Products */;
+					ProjectRef = CBAA0ECB07CB4335ABD67A9D /* UARCTModule.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -993,6 +1062,13 @@
 			fileType = archive.ar;
 			path = libBVLinearGradient.a;
 			remoteRef = 03AC5C4A204EF34C00732412 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		03FFF15A211371000066CF7F /* libUARCTModule.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libUARCTModule.a;
+			remoteRef = 03FFF159211371000066CF7F /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		139105C11AF99BAD00B5F7CC /* libRCTSettings.a */ = {
@@ -1226,6 +1302,24 @@
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
 		};
+		0AF4994C994F133AF85627F1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ForDogsOnly/Pods-ForDogsOnly-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/UrbanAirship-iOS-SDK/AirshipResources.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AirshipResources.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ForDogsOnly/Pods-ForDogsOnly-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		2D02E4CB1E0B4B27006451C7 /* Bundle React Native Code And Images */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1239,6 +1333,60 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
+		};
+		42870826D0F010C739D1105A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ForDogsOnly-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8299F0C851CF1B73836521F9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ForDogsOnly-tvOSTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B1EFEEEE316BBC0122557E80 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ForDogsOnlyTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -1307,6 +1455,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E3DFE3D33B8490484F6143A /* Pods-ForDogsOnlyTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -1317,12 +1466,14 @@
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-linear-gradient/BVLinearGradient",
 					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
+					"$(SRCROOT)/../node_modules/urbanairship-react-native/ios/UARCTModule",
 				);
 				INFOPLIST_FILE = ForDogsOnlyTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
@@ -1337,6 +1488,7 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08E23F877A810B8488CDFEE0 /* Pods-ForDogsOnlyTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
@@ -1344,12 +1496,14 @@
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-linear-gradient/BVLinearGradient",
 					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
+					"$(SRCROOT)/../node_modules/urbanairship-react-native/ios/UARCTModule",
 				);
 				INFOPLIST_FILE = ForDogsOnlyTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
@@ -1364,14 +1518,17 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4898D692977204F1B27255F4 /* Pods-ForDogsOnly.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
+				DEVELOPMENT_TEAM = N3Y5T2T9WG;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-linear-gradient/BVLinearGradient",
 					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
+					"$(SRCROOT)/../node_modules/urbanairship-react-native/ios/UARCTModule",
 				);
 				INFOPLIST_FILE = ForDogsOnly/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1387,13 +1544,16 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01DBDC3B5186DD848BA6E76F /* Pods-ForDogsOnly.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N3Y5T2T9WG;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-linear-gradient/BVLinearGradient",
 					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
+					"$(SRCROOT)/../node_modules/urbanairship-react-native/ios/UARCTModule",
 				);
 				INFOPLIST_FILE = ForDogsOnly/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1423,11 +1583,13 @@
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-linear-gradient/BVLinearGradient",
 					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
+					"$(SRCROOT)/../node_modules/urbanairship-react-native/ios/UARCTModule",
 				);
 				INFOPLIST_FILE = "ForDogsOnly-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
@@ -1459,11 +1621,13 @@
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-linear-gradient/BVLinearGradient",
 					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
+					"$(SRCROOT)/../node_modules/urbanairship-react-native/ios/UARCTModule",
 				);
 				INFOPLIST_FILE = "ForDogsOnly-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
@@ -1481,6 +1645,7 @@
 		};
 		2D02E4991E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F43C789178E9830CE028EF43 /* Pods-ForDogsOnly-tvOSTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -1496,6 +1661,7 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.ForDogsOnly-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1507,6 +1673,7 @@
 		};
 		2D02E49A1E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D828611694980F203CDD3FDD /* Pods-ForDogsOnly-tvOSTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -1520,6 +1687,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);

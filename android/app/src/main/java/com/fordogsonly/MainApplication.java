@@ -3,6 +3,7 @@ package com.fordogsonly;
 import android.app.Application;
 
 import com.facebook.react.ReactApplication;
+import com.urbanairship.reactnative.ReactAirshipPackage;
 import com.oblador.vectoricons.VectorIconsPackage;
 import com.BV.LinearGradient.LinearGradientPackage;
 import com.BV.LinearGradient.LinearGradientPackage;
@@ -26,6 +27,7 @@ public class MainApplication extends Application implements ReactApplication {
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
           new MainReactPackage(),
+            new ReactAirshipPackage(),
             new VectorIconsPackage(),
             new LinearGradientPackage(),
             new LinearGradientPackage()
